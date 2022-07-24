@@ -1,34 +1,35 @@
-Installation
-============
+如何安装
+=======
 
-Clone the repository from `Git Hub <https://github.com/mza79/rtd-tutorial>`_ in your local file.
-And you are ready to edit the docs.
+从 `Git Hub <https://github.com/mza79/rtd-tutorial>`_将源文件下载到您的本地文件,
+然后您就可以开始编辑这个文档了。
 
-Configuring Project
--------------------
+项目配置
+-------
 
-In the build configuration file ``conf.py``, you can edit the configuration
-to customize Sphinx input and output behavior.
+在构建配置文件（ ``conf.py`` ）中， 您可以自定义Sphinx的输入和输出行为。
+
 
 project
 """""""
-    The document project name
+    文档项目名称。
 
 author
 """"""
-    the author name(s)
+    作者的名字。
 
 copyright
 """""""""
-    A copyright statement in the style '2008, Author Name'.
+    版权宣言，格式如： '2008, 作者名'。
 
 version
 """""""
-    The major project version, eg. for python, the verison may be 3.8
+    项目版本号, 列： 以Python为例, 版本号可以是 3.8.3。
 
 release
-""""""
-    The full project version, eg. for python, the release may be 3.8.3
+"""""""
+
+    项目发布版本号, 以Python为例, 它的发布版本号可以是 3.8
 
 .. code-block:: python
 
@@ -39,9 +40,7 @@ release
     release = '0.1'
     version = '0.1.0'
 
-
-You can add and enable extensions to your project by adding the extension name
-to the extension's list
+您可以通过在extension列表中加入插件名 以启用和添加插件到您的文档中。
 
 .. code-block:: python
 
@@ -50,37 +49,34 @@ to the extension's list
         'new-extension',
     ]
 
-For more detailed documentation you can visit the `sphinx page <https://www.sphinx-doc.org/en/master/usage/configuration.html>`_
+想要阅读更详细的文档，您可以访问 `Sphinx page <https://www.sphinx-doc.org/en/master/usage/configuration.html>`_
 
-Configuring Read the Docs Build
--------------------------------
+配置Read the Docs的构建
+----------------------
 
-You can configure the build of your documentaion in ``.readthedocs.yaml``
+您可以在 ``.readthedocs.yaml`` 文件中配置文档的构建。
 
 version
 """""""
 
-verision of the configuration file ``.readthedocs.yaml``
+'verision': ``.readthedocs.yaml``文件中使用的版本 
 
-Example
+例
 
 .. code-block:: yaml
     version: 2
 
-If version not provided, version 1 (deprecated) will be used.
+如果没有定义版本的话, 默认会使用版本1(旧). 
 
 build
 """""
+配置文档的构建过程
 
-Configuration for the documentation build process. 
-**os** field allows you to specify the base Read the Docs image used 
-to build the documentation. 
-**tools** field allows you to control the versions of 
-several tools: Python, Node.js, Rust, and Go.
-**jobs** field allows you to configure commands to run before/after 
-the documentaion build.
+**os** 参数可以让您指定Read the Docs构建中使用的基础镜像。
+**tools** 参数可以让您设置使用的编程语言以及版本: Python, Node.js, Rust, and Go。
+**jobs** 参数可以让您自定义文档在构建开始前和结束后执行的命令。
 
-Example
+例
 
 .. code-block:: yaml
 
@@ -98,7 +94,9 @@ Example
 python
 """"""
 
-Configuration of the Python environment to be used.
+设置构建中的Python环境
+
+例
 
 .. code-block:: yaml
 
@@ -114,19 +112,10 @@ Configuration of the Python environment to be used.
             path: another/package
         system_packages: true
 
-Example
-
-.. code-block:: yaml
-
-    build:
-        os: "ubuntu-20.04"
-        tools:
-            python: "3.8"
-
 sphinx
 """"""
 
-Configuration for Sphinx documentation (this is the default documentation type).
+Sphinx 的设置 (Sphinx是默认使用的文档语言).
 
 .. code-block:: yaml
 
@@ -139,8 +128,7 @@ Configuration for Sphinx documentation (this is the default documentation type).
 
 formats
 """""""
-
-Additional formats of the documentation to be built, apart from the default HTML.
+设置除了默认html以外构建的格式: pdf, epub
 
 Example
 
@@ -150,5 +138,5 @@ Example
         - pdf
         - epub
 
-This section is referenced from `Read the Docs Documentation <https://docs.readthedocs.io/en/stable/config-file/index.html>`_
-and for more information, you can visit the `Read the Docs Documentation <https://docs.readthedocs.io/en/stable/config-file/index.html>`_
+这个分段参考了 `Read the Docs 官方文档 <https://docs.readthedocs.io/en/stable/config-file/index.html>`_
+想了解更多？ 您可以访问 `Read the Docs 官方文档 <https://docs.readthedocs.io/en/stable/config-file/index.html>`_ 

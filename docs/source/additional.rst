@@ -1,12 +1,10 @@
-Additional Information
-======================
+更多信息
+=======
 
-This documentaion is merely a simplest guide towards using Read the Docs.
+本文档不过是对Read the Docs相对基础的介绍。
 
-For more techniques on how to write documentations using Read the Docs,
-Please visit `Read the Docs document page <https://docs.readthedocs.io/en/stable/index.html>`_
+更多更详细的关于如何编写文档的知识，请参考 `Read the Docs 官方文档 <https://docs.readthedocs.io/en/stable/index.html>`_
 
-For more techniques on how to use Sphinx,
-Please visite `Sphinx document page <https://www.sphinx-doc.org/en/master/>`_
+更多关于Sphinx的技巧, 请参考 `Sphinx 官方文档<https://www.sphinx-doc.org/en/master/>`_
 
-Also, You can always rely on the `developer's BFF <https://www.google.com/>`_ for help.
+另外, 你永远可以相信 `程序员的好兄弟 <https://www.google.com/>`_  来助你一臂之力。

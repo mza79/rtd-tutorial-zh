@@ -1,8 +1,7 @@
-Glossary
+词汇表
 ========
 
 .. glossary::
 
-    technical term
-        Words or expressions that are used by a particular profession 
-        or group and are difficult for others to understand.
+    专业术语
+        不被广泛认知，只在专业领域中使用的词语或者表达。

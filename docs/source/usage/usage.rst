@@ -1,87 +1,88 @@
-Basics usage
-============
+基础使用
+=======
 
-Writing Content
----------------
-Under ``/docs/`` directory, open a .rst file that you want to edit
-with Github or your favourite text editor. 
+编写内容
+-------
+在 ``/docs/`` 目录下, 用GitHub自带的编辑功能或者您最爱的编辑器打开您想要编辑的 ``.rst`` 文件。
 
-Enter something to the file then save and commit to the branch.
+写入一些内容, 然后保存, 提交, 推入Git仓库。对, 就是这么简单。
 
-Viewing the Content
--------------------
-The most important thing about developing is viewing your change.
+查看您的更改
+----------
+开发环节中最重要的，就是开发进程的可视化。
 
-After adding content to your file. Make a commit in your Git branch 
-and go to `Document Builds <https://readthedocs.org/projects/mza79-rtd-tutorial/builds/>`_
-Check for build status, if build successful, you can click the completed
-build then click the buttons :guilabel:`view docs` on the right to view your change.
+在您提交你的更改到GiiHub后, 访问 `文档构建页面 <https://readthedocs.org/projects/mza79-rtd-tutorial/builds/>`_查看构建状态。 
+构建成功后, 您可以点入完成的构建页面，然后点击右上的:guilabel:`查看文档`, 就可以查看您的文档了。
 
-How to Write Headers
---------------------
+如何写标题
+----------
 
-Section hearders:
+章段标题:
+
 .. code-block::
 
-   This is a Section Header
-   ========================
+   这就是章段标题
+   ============
 
-Parts headers:
+部分标题:
 .. code-block::
 
-   ######################
-   This is a parts header
-   ######################
+   ############
+   这就是部分标题
+   ############
 
-And all the other header types:
+以及其他的标题种类:
 
-* # for parts header, with overline, 
-* \* for chapters header, with overline, 
-* = for sections header
-* \- for subsections header
-* ^ for subsubsections header
-* " for paragraphs header
+* # 用于部分标题, 上下两层。
+* \* 用于章节标题, 上下两层。
+* = 用于章段标题， 下面一层。
+* \- 用于小节标题
+* ^ 用于小小节标题
+* " 用于自然段标题
 
 
-How to Write Lists
-------------------
-This is a list.
-   * point list item 1
-   * point list item 2
-      * nested list item
-   1. number list item 1
-   2. number list item 2
-   #. and another number list, item 1
-   #. another number list, item 2
+如何写列表
+---------
+这是个列表
+   * 这个是列表项
+   * 这又是列表项
+      * 这是嵌套列表项
+   1. 这是编号列项
+   2. 这是编号列项
+   #. 这也是编号列项
+   #. 这还是编号列项
 
 .. code-block:: 
-   This is a list.
-      * point list item 1
-      * point list item 2
-         * nested list item
-      1. number list item 1
-      2. number list item 2
-      #. and another number list, item 1
-      #. another number list, item 2
 
-How to add Notes
-----------------
+   这是个列表
+      * 这个是列表项
+      * 这又是列表项
+         * 这是嵌套列表项
+      1. 这是编号列项
+      2. 这是编号列项
+      #. 这也是编号列项
+      #. 这还是编号列项
+
+
+如何写注释
+----------
 .. note:: 
-   This is a Note, and here's how you can use it.
+   注释就是这长个样子的
    
    | .. note::
-   |      followed by the notes that you want to write.
+   |      加上上面这行就可以写注释了
 
 How to add Tips
 ---------------
 .. tip::
-   You can use tips like this:
-        | .. tip:: 
-        |   followed by the tips that you want to write.
+   提示就是长这个样子的:
 
-How to add Images
------------------
-You can add beutiful images too with this code:
+        | .. tip:: 
+        |   加上上面这行就可以写提示了
+
+如何导入图片
+----------
+你可以用以下代码导入图片:
 
 .. image:: ../Media/Images/beautiful-image.jpg
    :width: 80%
@@ -96,53 +97,55 @@ You can add beutiful images too with this code:
         :alt: this is a beautiful image
 
 
-Styling your Documentations
----------------------
+加入更多文体
+----------
 
-Bold
+粗体
 ^^^^
-Text wrapped like \*\*this\*\* is **Bolded**.
+文本包裹的像 \*\*这样\*\* 就是 **粗体**.
 
-Italic
+斜体
 ^^^^^^
-Text wrapped like \*this\* is *Italic*.
+文本包裹的像  \*这样\* 就是 *斜体*.
 
-Italic
+代码样式
 ^^^^^^
-Text wrapped like \`\`this\`\` is for ``code sample``.
+文本包裹的像 \`\`这样\`\` 就是 ``代码样式``.
 
-Literal blocks
+文字块
 ^^^^^^^^^^^^^^
-this is how you write a block of text: 
+您可以用以下代码加入文字块: 
 
 .. code-block:: rst
 
    .. code-block::
-   This is a block of text
+   这是文字块
 
-Labels
-^^^^^^
-This is a :guilabel:`Label` and it can be used as this
+标签
+^^^^
+这是一个 :guilabel:`标签`, 可以用以下代码使用
+
 .. code-block:: 
 
    This is a :guilabel:`Label`
 
-HyperLinks
-^^^^^^^^^^
-This is a link to `Document Home <https://mza79-rtd-tutorial.readthedocs.io/en/stable/index.html>`_
+链接
+^^^^
+这是一个指向 `文档首页 <https://mza79-rtd-tutorial.readthedocs.io/en/stable/index.html>`_的链接。
 
 .. code-block::
 
-   This is a link to `Document Home <https://mza79-rtd-tutorial.readthedocs.io/en/stable/index.html>`_
+   这是一个指向 `文档首页 <https://mza79-rtd-tutorial.readthedocs.io/en/stable/index.html>`_的链接。
 
-Technical Terms
-^^^^^^^^^^^^^^^
-Technical terms are defined in a glossary file which has this declaration at the top:
+
+专业术语
+^^^^^^^
+您可以在词汇表页面中加入专业术语的定义, 词汇表由以下代码声明:
 ``.. glossary::``
 
-This is a :term:`technical term`, and it can be used with:
+这是一个 :term:`专业术语`, 可以用以下代码使用:
 
 .. code-block::
 
-   :term:`technical term`
+   :term:`专业术语`
 

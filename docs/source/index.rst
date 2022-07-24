@@ -1,22 +1,21 @@
-Welcome to How to Use Read the Docs Documentation!
-===================================
+欢迎访问如何使用 Read the Docs!
+============================
 
-Read the Docs is a documentaion tool that simplifies documentation process
-and automizes the build, versioning and hosting for you.
+Read the Docs 是一个文档编写工具, 它简化了文档编写, 并提供了
+自动化构建,版本控制, 以及网站寄存。
 
-This document aims to introduce you to how to use Read the Docs,
-and how to write contents to this documentaion.
+本文档致于介绍Read the Docs的基础使用, 以及对本文档的编写。
 
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
+更多详情, 请参考 :doc:`usage` 章节，
 
+以及 :ref:`installation` the project.
 
 .. note::
 
-   Welcome all to contribute to this documentation.
+   欢迎一切为本文档作出的贡献
 
-Table of Contents
---------
+目录
+----
 
 .. toctree::
    :maxdepth: 2

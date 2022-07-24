@@ -1,0 +1,12 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "api"
+authors = [{name = "Tom Zhang", email = "tomzhangmc@gmail.com"}]
+dynamic = ["version", "description"]
+
+# Requirements
+[dependencies]
+datetime = "^4.0"

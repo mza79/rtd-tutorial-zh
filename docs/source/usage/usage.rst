@@ -11,8 +11,8 @@
 ----------
 开发环节中最重要的，就是开发进程的可视化。
 
-在您提交你的更改到GiiHub后, 访问 `文档构建页面 <https://readthedocs.org/projects/mza79-rtd-tutorial/builds/>`_查看构建状态。 
-构建成功后, 您可以点入完成的构建页面，然后点击右上的:guilabel:`查看文档`, 就可以查看您的文档了。
+在您提交你的更改到GiiHub后, 访问 `文档构建页面 <https://readthedocs.org/projects/mza79-rtd-tutorial/builds/>`_ 查看构建状态。 
+构建成功后, 您可以点入完成的构建页面，然后点击右上的 :guilabel:`查看文档` , 就可以查看您的文档了。
 
 如何写标题
 ----------
@@ -25,6 +25,7 @@
    ============
 
 部分标题:
+
 .. code-block::
 
    ############
@@ -64,18 +65,18 @@
       #. 这还是编号列项
 
 
-如何写注释
+如何写备注
 ----------
 .. note:: 
-   注释就是这长个样子的
+   备注就是这长个样子的
    
    | .. note::
-   |      加上上面这行就可以写注释了
+   |      加上上面这行就可以写备注了
 
-How to add Tips
+小提示
 ---------------
 .. tip::
-   提示就是长这个样子的:
+   小提示就是长这个样子的:
 
         | .. tip:: 
         |   加上上面这行就可以写提示了
@@ -131,11 +132,11 @@ How to add Tips
 
 链接
 ^^^^
-这是一个指向 `文档首页 <https://mza79-rtd-tutorial.readthedocs.io/en/stable/index.html>`_的链接。
+这是一个指向 `文档首页 <https://mza79-rtd-tutorial.readthedocs.io/en/stable/index.html>`_ 的链接。
 
 .. code-block::
 
-   这是一个指向 `文档首页 <https://mza79-rtd-tutorial.readthedocs.io/en/stable/index.html>`_的链接。
+   这是一个指向 `文档首页 <https://mza79-rtd-tutorial.readthedocs.io/en/stable/index.html>`_ 的链接。
 
 
 专业术语

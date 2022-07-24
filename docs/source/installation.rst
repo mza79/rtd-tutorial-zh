@@ -1,7 +1,7 @@
 如何安装
 =======
 
-从 `Git Hub <https://github.com/mza79/rtd-tutorial>`_将源文件下载到您的本地文件,
+从 `Git Hub <https://github.com/mza79/rtd-tutorial>`_ 将源文件下载到您的本地文件,
 然后您就可以开始编辑这个文档了。
 
 项目配置
@@ -59,7 +59,7 @@ release
 version
 """""""
 
-'verision': ``.readthedocs.yaml``文件中使用的版本 
+verision 参数指定了在 ``.readthedocs.yaml`` 文件中使用的版本 
 
 例
 
@@ -72,9 +72,9 @@ build
 """""
 配置文档的构建过程
 
-**os** 参数可以让您指定Read the Docs构建中使用的基础镜像。
-**tools** 参数可以让您设置使用的编程语言以及版本: Python, Node.js, Rust, and Go。
-**jobs** 参数可以让您自定义文档在构建开始前和结束后执行的命令。
+**os**  参数可以让您指定Read the Docs构建中使用的基础镜像。
+| **tools**  参数可以让您设置使用的编程语言以及版本: Python, Node.js, Rust, and Go。
+| **jobs**  参数可以让您自定义文档在构建开始前和结束后执行的命令。
 
 例
 
